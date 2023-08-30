@@ -105,35 +105,28 @@ const Header: React.FC<HeaderProps> = ({
                     "
                 >
                     <>
-                        <Button
-                        className="
-                            onClick = {() = {}}
-                            bg-transparent
-                            text-neutral-300
-                            font-medium
-                        ">
-                            Sign Up
-                        </Button>
-                    </>
-                </div>
-                <div
-                    className="
-                        flex
-                        justify-between
-                        items-center
-                        gap-x-4
-                    "
-                >
-                    <>
-                        <Button
-                        className="
-                            onClick = {() = {}}
-                            bg-white
-                            px-6
-                            py-2
-                        ">
-                            Log in
-                        </Button>
+                        <div>
+                            <Button
+                            className="
+                                onClick = {() = {}}
+                                bg-transparent
+                                text-neutral-300
+                                font-medium
+                            ">
+                                Sign Up
+                            </Button>
+                        </div>
+                        <div>
+                            <Button
+                            className="
+                                onClick = {() = {}}
+                                bg-white
+                                px-6
+                                py-2
+                            ">
+                                Log in
+                            </Button>
+                        </div>
                     </>
                 </div>
             </div>

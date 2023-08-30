@@ -22,11 +22,11 @@ const Button = forwardRef <HTMLButtonElement, ButtonProps>(({
                 border-transparent
                 py-3
                 px-3
-                disabled: cursor-not-allowed
-                disabled: opacity-50
+                disabled:cursor-not-allowed
+                disabled:opacity-50
                 text-black
                 font-bold
-                hover: opacity-75
+                hover:opacity-75
                 transition
             `,
                 className
