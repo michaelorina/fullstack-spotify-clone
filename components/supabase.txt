@@ -1,0 +1,1 @@
+Create supabase and configure shit init
