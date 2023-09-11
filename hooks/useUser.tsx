@@ -34,5 +34,5 @@ export const UserContext = createContext<UserContextType | undefined> (
     const [userDetails, setUserDetails] = useState<UserDetails | null>(null);
     const [subscription, setSubscription] = useState< Subscription | null>(null);
 
-    
+    const getUserDetails = () => supabase.from('users').select('*').single();
  }
