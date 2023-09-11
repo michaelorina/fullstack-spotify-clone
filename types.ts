@@ -10,6 +10,20 @@ export interface UserDetails {
     payment_method?:Stripe.PaymentMethod[Stripe.PaymentMethod.Type];
 }
 
+export interface Price {
+    id: string;
+    product_id?: string;
+    active?: boolean;
+    description?: string;
+    unit_amount?: number;
+    currency?: string;
+    type?: Stripe.Price.Type;
+    interval?: Stripe.Price.Recurring.Interval;
+    interval_count?: number;
+    trial_period_days?: number | null;
+    metadata?: Stripe.Metadata;
+}
+
 export interface Subscription {
     id: string;
     user_id: string;
@@ -26,5 +40,5 @@ export interface Subscription {
     canceled_at?: string;
     trial_start?: string;
     trial_end?: string;
-    
+    prices?: Price;
 }
