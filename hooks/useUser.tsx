@@ -35,4 +35,10 @@ export const UserContext = createContext<UserContextType | undefined> (
     const [subscription, setSubscription] = useState< Subscription | null>(null);
 
     const getUserDetails = () => supabase.from('users').select('*').single();
+    const getSubscription = () =>
+        supabase
+            .from('subscription')
+            .select('*, prices(*, products(*))')
+            .in('status', ['trialing', 'active'])
+            .single();
  }
